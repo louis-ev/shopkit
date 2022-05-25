@@ -17,8 +17,8 @@ As of Shopkit 2.6, a shopkit license key is no longer required.
 
 */
 
-c::set('license', '');         // put your Kirby license key here
-c::set('license-shopkit', ''); // put your Shopkit license key here
+c::set('license', 'K2-PRO-ff891becc3cc0040dd600d2bbcedc59c');         // put your Kirby license key here
+c::set('license-shopkit', '600ef7de83442cfa'); // put your Shopkit license key here
 
 
 /* 
@@ -54,7 +54,7 @@ A list of supported timezones can be found at http://php.net/manual/en/timezones
 
 */
 
-c::set('timezone', 'UTC');
+c::set('timezone', 'Europe/Paris');
 
 
 /* 
@@ -117,33 +117,34 @@ Languages
 
 */
 
-c::set('language.detect', true);
+c::set('language.detect', false);
 c::set('languages', array(
-  array(
-    'code'    => 'en',
-    'name'    => 'English',
-    'default' => true,
-    'locale'  => 'en_US',
-    'url'     => '/',
-  ),
+  // array(
+  //   'code'    => 'en',
+  //   'name'    => 'English',
+  //   'default' => true,
+  //   'locale'  => 'en_US',
+  //   'url'     => '/',
+  // ),
   array(
     'code'    => 'fr',
     'name'    => 'Français',
     'locale'  => 'fr_FR',
-    'url'     => '/fr',
-  ),
-  array(
-    'code'    => 'de',
-    'name'    => 'Deutsch',
-    'locale'  => 'de_DE',
-    'url'     => '/de',
-  ),
-  array(
-    'code'    => 'es',
-    'name'    => 'Español',
-    'locale'  => 'es_ES',
-    'url'     => '/es',
-  ),
+    'default' => true,
+    'url'     => '/',
+),
+  // array(
+  //   'code'    => 'de',
+  //   'name'    => 'Deutsch',
+  //   'locale'  => 'de_DE',
+  //   'url'     => '/de',
+  // ),
+  // array(
+  //   'code'    => 'es',
+  //   'name'    => 'Español',
+  //   'locale'  => 'es_ES',
+  //   'url'     => '/es',
+  // ),
 ));
 
 
